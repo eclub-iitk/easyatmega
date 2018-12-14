@@ -17,3 +17,6 @@ This is only for linux users.
   ```bash
   avrdude -c avrisp -p m328p -P /dev/ttyUSB0 -b 19200 -u -U flash:w:main.hex
   ```
+  ```bash
+  avrdude -c avrisp -p m328p -P /dev/ttyUSB0 -b 19200 -U lfuse:w:0xff:m -U hfuse:w:0xde:m -U efuse:w:0x05:m
+  ```
